@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url('fonts/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7CA.ttf') format('truetype');
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+body {
+	display:flex;
+	margin: 0;
+	font-family: 'Roboto Condensed';
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu {
+	background-color: #422725;
+	color: white;
+	padding: 50px;
+	padding-top:50px;
+}
+
+button {
+    padding: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-left:3px;
+    margin-right:3px;
+    background-color:#943C33;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#AB453B;
+}
+
+.actived {
+    background-color:#A64471;
+}
+.actived:hover {
+    background-color:#BD4D81;
+}
+
+.slider {
+    background-color: #141011;
+    -webkit-appearance: none;
+    height: 7px;
+    border-radius: 8px;
+}
+
+.slider::-webkit-slider-thumb {
+    border-radius: 8px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 20px;
+    background: white;
+    cursor: pointer;
+}
+
+.slider-value {
+    font-family: 'Roboto Condensed';
+    width:35px;
+    text-align: center;
+    padding: 5px;
+    background-color:white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.interative_area {
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}

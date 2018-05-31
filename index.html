@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Chaos Game</title>
+		<link rel="stylesheet" href="CSS/main.css">
+		<script src="JS\jquery-3.3.1.min.js"></script>
+		<script src="JS\main.js"></script>
+	</head>
+	<body>
+		<div class="menu">
+			<h1>CHAOS GAME</h1>
+			<button id="btn_status">Start</button>
+			<button id="btn_clear">Clear</button>
+			<button id="btn_add" style="float:right">Add Point</button>
+			<br>
+			<br>
+			<h2>- Options -</h2>
+			<div>
+				<h3>Velocity:</h3>
+					<div style="float:right; margin-top:-7px">
+						<button id="btn_slow">Slow</button>
+						<button id="btn_medi" class="actived">Medium</button>
+						<button id="btn_fast">Fast</button>
+					</div>
+			</div>
+
+			<br>
+			<br>
+			<br>
+			Fixed Point Size:
+			<div style="float:right;  margin-top:-5px">
+				<input id="sld_fixed" class="slider" type="range" value="100">
+				<input id="npt_fixed" class="slider-value" type="text" value="100">
+			</div>
+			<br>
+			<br>
+			<br>
+
+			Lived Point Size:
+			<div style="float:right; margin-top:-5px">
+				<input id="sld_lived" class="slider" type="range" value="5">
+				<input id="npt_lived" class="slider-value" type="text" value="5">
+			</div>
+			<br>
+		</div>
+		<div class="interative_area">
+			<svg id="main" style="height:100%; width:100%; margin: 0;">
+			  <circle class="fixed-point" cx="290" cy="134.872" r="15" stroke-width="0" fill="#2E325E" />
+			  <circle class="fixed-point" cx="450" cy="412" r="15" stroke-width="0" fill="#5F2952" />
+			  <circle class="fixed-point" cx="130" cy="412" r="15" stroke-width="0" fill="#99653E" />
+			  <circle class="start-point" cx="290" cy="277.128" r="15" stroke-width="0" fill="black" />
+			</svg>
+		</div>
+	</body>
+</html>
